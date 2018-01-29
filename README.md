@@ -2,6 +2,8 @@
 
 This is a test application to demonstrate problems with multiple BLE advertisements inside of a Chrome App.
 
+[CRBUG#806999](https://bugs.chromium.org/p/chromium/issues/detail?id=806999)
+
 [Available in the Chrome Web Store](https://chrome.google.com/webstore/detail/chrome-multiple-ble-adver/ikpgoppmdfdpgejjelkfladjbnecjkgg)
 
 ## Expected behavior

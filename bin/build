@@ -1,0 +1,17 @@
+echo "Building Package"
+
+mkdir -p build
+
+# Get the version number from the manifest
+version=$(sed -n 's/.*"version": "\(.*\)",/\1/p' manifest.json)
+
+ZIP_FILE=dk_$version.zip
+
+rm -rf $ZIP_FILE
+zip -R $ZIP_FILE assets/*.png
+zip -r $ZIP_FILE index.html
+zip -r $ZIP_FILE background.js
+zip -r $ZIP_FILE bluetooth.js
+zip -r $ZIP_FILE manifest.json
+
+mv $ZIP_FILE build/
